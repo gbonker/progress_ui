@@ -3,5 +3,26 @@
 }
 
 .app-content {
-  margin-top: 5rem;
+  margin-top: 3rem;
+  overflow: scroll;
+}
+
+.app-header {
+  position: static;
+}
+
+.App {
+  overflow: scroll;
+}
+
+.page-bottom {
+  margin-bottom: 3rem;
+}
+
+.input-control {
+  margin-bottom: 2rem;
+}
+
+.radio-list {
+  margin-bottom: 2rem;
 }

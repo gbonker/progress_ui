@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Details from './components/details/Details';
 
 class App extends Component {
   render() {
@@ -24,6 +25,14 @@ class App extends Component {
             </div>
           </section>
           <div className="app-content">
+            <div className="max-width">
+              <ol className="breadcrumbs">
+                <li><a href="">Main Menu</a></li>
+                <li><a href="">List Page</a></li>
+                <li><a href="">Details Page</a></li>
+              </ol>
+              <Details />
+            </div>
           </div>
         </div>
       </div>
