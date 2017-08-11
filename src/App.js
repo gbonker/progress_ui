@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Details from './components/details/Details';
+// import Details from './components/details/Details';
+import List from './components/list/List';
 
 class App extends Component {
   render() {
@@ -26,12 +27,13 @@ class App extends Component {
           </section>
           <div className="app-content">
             <div className="max-width">
-              <ol className="breadcrumbs">
-                <li><a href="">Main Menu</a></li>
-                <li><a href="">List Page</a></li>
-                <li><a href="">Details Page</a></li>
-              </ol>
-              <Details />
+              <div className="sub-nav">
+                <ol className="breadcrumbs">
+                  <li><a href="">Main Menu</a></li>
+                  <li className="active"><a href="" tabIndex="-1">Tags</a></li>
+                </ol>
+              </div>
+              <List />
             </div>
           </div>
         </div>

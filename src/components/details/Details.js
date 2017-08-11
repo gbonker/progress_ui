@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Dropdown from '../shared/Dropdown'
-import Datepicker from '../shared/Datepicker'
-import TextInput from '../shared/TextInput'
-import TextInputLarge from '../shared/TextInputLarge'
-import RadioButtons from '../shared/RadioButtons'
+import Dropdown from '../shared/Dropdown';
+import Datepicker from '../shared/Datepicker';
+import TextInput from '../shared/TextInput';
+import TextInputLarge from '../shared/TextInputLarge';
+import RadioButtons from '../shared/RadioButtons';
 
 class Details extends Component {
 

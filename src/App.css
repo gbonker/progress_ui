@@ -20,9 +20,13 @@
 }
 
 .input-control {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .radio-list {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.no-overflow {
+	overflow: hidden;
 }
