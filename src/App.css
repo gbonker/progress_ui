@@ -1,18 +1,13 @@
 .logo {
-  color: #212529;
+  color: white;
 }
 
 .app-content {
-  margin-top: 3rem;
-  overflow: scroll;
+  padding-top: 2rem;
 }
 
 .app-header {
   position: static;
-}
-
-.App {
-  overflow: scroll;
 }
 
 .page-bottom {
@@ -27,6 +22,6 @@
   margin-bottom: 1rem;
 }
 
-.no-overflow {
-	overflow: hidden;
+.right {
+  float: right;
 }

@@ -9,7 +9,7 @@ const TableRow = ({id, path, name, ownerCommittee, createdBy, dateCreated, descr
       <td>{ownerCommittee}</td>
       <td>{createdBy}</td>
       <td>{dateCreated}</td>
-      <td className="no-overflow">{description}</td>
+      <td>{description}</td>
     </tr>
   );
 }

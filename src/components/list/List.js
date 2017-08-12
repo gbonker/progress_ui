@@ -18,7 +18,7 @@ class List extends Component {
                 <h3 className="page-title-sub">Admin</h3>
                 <h5 className="page-title">Tags</h5>
               </div>
-              <div className="van-header-actions page-title-actions">
+              <div className="van-header-actions page-title-actions btn-group right">
                 <button className="btn btn-gray btn-dropdown">
                   List
                   <ul className="dropdown-menu left">
