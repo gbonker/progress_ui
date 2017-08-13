@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-// import Details from './components/details/Details';
-import List from './components/list/List';
+import Breadcrumbs from './components/shared/Breadcrumbs';
+import Main from './components/shared/Main';
 
 class App extends Component {
   render() {
@@ -28,12 +28,9 @@ class App extends Component {
           <div className="app-content">
             <div className="max-width">
               <div className="sub-nav">
-                <ol className="breadcrumbs">
-                  <li><a href="">Main Menu</a></li>
-                  <li className="active"><a href="" tabIndex="-1">Tags</a></li>
-                </ol>
+                <Breadcrumbs />
               </div>
-              <List />
+              <Main />
             </div>
           </div>
         </div>
