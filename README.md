@@ -1,3 +1,11 @@
+## ProgressUI
+
+This is an app written in React styled with the ProgressUI CSS framework. The tags page allows the user to search for different tags by name, and updates the search results automatically.
+
+
+
+## Documentation
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
