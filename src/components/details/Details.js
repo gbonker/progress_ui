@@ -50,7 +50,7 @@ class Details extends Component {
                   <div className="input-list ng-scope">
                     <Dropdown required={true} label={"Designation"} options={designationOptions} />
                     <TextInput required={true} label={"Activity Name"} />
-                    <RadioButtons required={true} label={"Activity Type"} options={activityTypeOptions} />
+                    <RadioButtons required={true} label={"Activity Type"} options={activityTypeOptions} name={"activity-type"} />
                     <Dropdown required={false} label={"Source Code"} options={sourceCodeOptions} inputMessage={"Only one source code per transaction"} />
                     <TextInputLarge required={false} label={"Explanatory Text"} placeholder={"Maximum of 4000 characters."} />
                   </div>
@@ -60,7 +60,7 @@ class Details extends Component {
               <hr />
               <div className="grid-half">
                 <div className="col-md-3">
-                  <h2>Add an Initial Radio Item</h2>
+                  <h2>Add an Initial Ratio Item</h2>
                   <p className="text-sm">
                     Provide the Federal/Non-Federal Allocation breakdown for this Activity. Revisions to this ratio may be added now or in the future.
                   </p>

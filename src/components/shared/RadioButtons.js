@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RadioButtons = ({label, options, required}) => {
+const RadioButtons = ({label, options, required, name}) => {
   var requiredStar;
   if (required) {
     requiredStar = <span className="error">*</span>
@@ -12,9 +12,8 @@ const RadioButtons = ({label, options, required}) => {
       <ul className="radio-list">
         {Object.keys(options).map((t,i) => 
           <li key={i*-1} className="radio-unit">
-            <label key={i} className="radio-label">
-              <input key={t} name="radio-example" className="radio" type="radio" /> {t}
-            </label>
+            <input key={t} id={t} name={name} className="radio" type="radio" />
+            <label key={i} htmlFor={t} className="radio-label">{t}</label>
           </li>
         )}
       </ul>
