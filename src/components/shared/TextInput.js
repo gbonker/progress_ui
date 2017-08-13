@@ -14,7 +14,10 @@ const TextInput = ({label, required, inputMessage}) => {
     <li className="input-unit">
       <label className="input-label"><strong>{label} {requiredStar}</strong></label>
       <div className="input-control">
-        <input className="input-element input-element-base" type="text" />
+        <input 
+          className="input-element input-element-base" 
+          type="text" 
+        />
         {inputMessageHTML}
       </div>
     </li>

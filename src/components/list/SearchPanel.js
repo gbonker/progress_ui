@@ -1,8 +1,24 @@
 import React, { Component } from 'react';
+import SearchBar from '../shared/SearchBar';
 import TextInput from '../shared/TextInput';
 import Dropdown from '../shared/Dropdown';
 
 class SearchPanel extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { 
+      searchName: ''
+    };
+  }
+
+  onChange = (event) => {
+    this.setState({
+      searchName: event.target.value
+    });
+    this.props.onChange(event);
+  }
+
   render() {
     var committeeOptions = {
       "": "", 
@@ -19,7 +35,7 @@ class SearchPanel extends Component {
         <div className="panel-content">
           <div className="grid-half">
             <div className="col-md-3">
-              <TextInput label={"Tag Name"} />
+              <SearchBar label={"Tag Name"} onSearchTermChange={event => this.onChange(event)} />
             </div>
             <div className="col-md-3">
               <TextInput label={"Parent Name"} />

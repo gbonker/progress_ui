@@ -1,8 +1,41 @@
 import React, { Component } from 'react';
 import SearchPanel from './SearchPanel';
 import Table from './Table';
+import tagData from '../../data.json';
 
 class List extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { 
+      data: tagData,
+      searchName: '',
+      searchResults: tagData
+    };
+  }
+
+  onChange = (event) => {
+    this.setState({
+      searchName: event.target.value
+    });
+    this.updateSearchResults(this.state.data, this.state.searchName);
+  }
+
+  updateSearchResults = (data, searchName) => {
+    var resultsOfSearch = data.slice();
+    if (searchName.length > 1) {
+      this.setState({
+        searchResults: resultsOfSearch.filter(result => {
+          return result.name.toLowerCase().match( searchName.toLowerCase() );
+        })
+      });
+    } else {
+      this.setState({
+        searchResults: this.state.data.slice()
+      });
+    }
+  }
+
   render() {
     return (
       <div>
@@ -38,8 +71,8 @@ class List extends Component {
             </div>
           </div>
           <div className="van-listpage">
-            <SearchPanel />
-            <Table />
+            <SearchPanel onChange={event => this.onChange(event)} />
+            <Table data={this.state.searchResults} />
           </div>
         </div>
       </div>
